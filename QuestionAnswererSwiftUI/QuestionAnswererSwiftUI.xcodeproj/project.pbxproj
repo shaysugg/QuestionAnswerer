@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F584841299CC71C00D705C5 /* QuestionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F584840299CC71C00D705C5 /* QuestionKit */; };
+		1F83D8A6299BA2E50021008D /* ExamResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83D8A5299BA2E50021008D /* ExamResultView.swift */; };
+		1F83D8A8299BB07D0021008D /* QuestionSidebarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F83D8A7299BB07D0021008D /* QuestionSidebarItemView.swift */; };
+		1FFA51372993C7EE008D2F71 /* QuestionAnswererSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA51362993C7EE008D2F71 /* QuestionAnswererSwiftUIApp.swift */; };
+		1FFA513B2993C7F0008D2F71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA513A2993C7F0008D2F71 /* Assets.xcassets */; };
+		1FFA513E2993C7F0008D2F71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFA513D2993C7F0008D2F71 /* Preview Assets.xcassets */; };
+		1FFA51482993C890008D2F71 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA51472993C890008D2F71 /* QuestionView.swift */; };
+		1FFA514A2993C8E4008D2F71 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA51492993C8E4008D2F71 /* QuestionViewModel.swift */; };
+		1FFA514E2993CF1C008D2F71 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA514D2993CF1C008D2F71 /* Mocks.swift */; };
+		1FFA51502993D833008D2F71 /* QuestionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFA514F2993D833008D2F71 /* QuestionsListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F83D8A5299BA2E50021008D /* ExamResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResultView.swift; sourceTree = "<group>"; };
+		1F83D8A7299BB07D0021008D /* QuestionSidebarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSidebarItemView.swift; sourceTree = "<group>"; };
+		1FA6DAAD299CC6C4009C316D /* QuestionKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = QuestionKit; path = ../../QuestionKit; sourceTree = "<group>"; };
+		1FFA51332993C7EE008D2F71 /* QuestionAnswererSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionAnswererSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFA51362993C7EE008D2F71 /* QuestionAnswererSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswererSwiftUIApp.swift; sourceTree = "<group>"; };
+		1FFA513A2993C7F0008D2F71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FFA513D2993C7F0008D2F71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1FFA513F2993C7F0008D2F71 /* QuestionAnswererSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuestionAnswererSwiftUI.entitlements; sourceTree = "<group>"; };
+		1FFA51472993C890008D2F71 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		1FFA51492993C8E4008D2F71 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
+		1FFA514D2993CF1C008D2F71 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		1FFA514F2993D833008D2F71 /* QuestionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FFA51302993C7EE008D2F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F584841299CC71C00D705C5 /* QuestionKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F58483F299CC71C00D705C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F83D8A9299BB7A60021008D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1FFA51492993C8E4008D2F71 /* QuestionViewModel.swift */,
+				1FFA514F2993D833008D2F71 /* QuestionsListView.swift */,
+				1F83D8AA299BB7B00021008D /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1F83D8AA299BB7B00021008D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F83D8A7299BB07D0021008D /* QuestionSidebarItemView.swift */,
+				1F83D8A5299BA2E50021008D /* ExamResultView.swift */,
+				1FFA51472993C890008D2F71 /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1FD62A24299CBE7F009F1646 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		1FFA512A2993C7EE008D2F71 = {
+			isa = PBXGroup;
+			children = (
+				1FD62A24299CBE7F009F1646 /* Packages */,
+				1FFA51352993C7EE008D2F71 /* QuestionAnswererSwiftUI */,
+				1FFA51342993C7EE008D2F71 /* Products */,
+				1F58483F299CC71C00D705C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1FFA51342993C7EE008D2F71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFA51332993C7EE008D2F71 /* QuestionAnswererSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FFA51352993C7EE008D2F71 /* QuestionAnswererSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				1F83D8A9299BB7A60021008D /* Presentation */,
+				1FFA51362993C7EE008D2F71 /* QuestionAnswererSwiftUIApp.swift */,
+				1FFA513A2993C7F0008D2F71 /* Assets.xcassets */,
+				1FFA513F2993C7F0008D2F71 /* QuestionAnswererSwiftUI.entitlements */,
+				1FFA513C2993C7F0008D2F71 /* Preview Content */,
+				1FFA514D2993CF1C008D2F71 /* Mocks.swift */,
+				1FA6DAAD299CC6C4009C316D /* QuestionKit */,
+			);
+			path = QuestionAnswererSwiftUI;
+			sourceTree = "<group>";
+		};
+		1FFA513C2993C7F0008D2F71 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1FFA513D2993C7F0008D2F71 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FFA51322993C7EE008D2F71 /* QuestionAnswererSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFA51422993C7F0008D2F71 /* Build configuration list for PBXNativeTarget "QuestionAnswererSwiftUI" */;
+			buildPhases = (
+				1FFA512F2993C7EE008D2F71 /* Sources */,
+				1FFA51302993C7EE008D2F71 /* Frameworks */,
+				1FFA51312993C7EE008D2F71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuestionAnswererSwiftUI;
+			packageProductDependencies = (
+				1F584840299CC71C00D705C5 /* QuestionKit */,
+			);
+			productName = QuestionAnswererSwiftUI;
+			productReference = 1FFA51332993C7EE008D2F71 /* QuestionAnswererSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FFA512B2993C7EE008D2F71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1FFA51322993C7EE008D2F71 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1FFA512E2993C7EE008D2F71 /* Build configuration list for PBXProject "QuestionAnswererSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FFA512A2993C7EE008D2F71;
+			productRefGroup = 1FFA51342993C7EE008D2F71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FFA51322993C7EE008D2F71 /* QuestionAnswererSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FFA51312993C7EE008D2F71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFA513E2993C7F0008D2F71 /* Preview Assets.xcassets in Resources */,
+				1FFA513B2993C7F0008D2F71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FFA512F2993C7EE008D2F71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFA51482993C890008D2F71 /* QuestionView.swift in Sources */,
+				1FFA514A2993C8E4008D2F71 /* QuestionViewModel.swift in Sources */,
+				1F83D8A6299BA2E50021008D /* ExamResultView.swift in Sources */,
+				1FFA51502993D833008D2F71 /* QuestionsListView.swift in Sources */,
+				1F83D8A8299BB07D0021008D /* QuestionSidebarItemView.swift in Sources */,
+				1FFA514E2993CF1C008D2F71 /* Mocks.swift in Sources */,
+				1FFA51372993C7EE008D2F71 /* QuestionAnswererSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1FFA51402993C7F0008D2F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FFA51412993C7F0008D2F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1FFA51432993C7F0008D2F71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuestionAnswererSwiftUI/QuestionAnswererSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuestionAnswererSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuttup.cleandatatoview.QuestionAnswererSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1FFA51442993C7F0008D2F71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QuestionAnswererSwiftUI/QuestionAnswererSwiftUI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"QuestionAnswererSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuttup.cleandatatoview.QuestionAnswererSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFA512E2993C7EE008D2F71 /* Build configuration list for PBXProject "QuestionAnswererSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFA51402993C7F0008D2F71 /* Debug */,
+				1FFA51412993C7F0008D2F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFA51422993C7F0008D2F71 /* Build configuration list for PBXNativeTarget "QuestionAnswererSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFA51432993C7F0008D2F71 /* Debug */,
+				1FFA51442993C7F0008D2F71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F584840299CC71C00D705C5 /* QuestionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = QuestionKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1FFA512B2993C7EE008D2F71 /* Project object */;
+}
