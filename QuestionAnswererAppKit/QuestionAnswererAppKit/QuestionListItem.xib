@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="QuestionListItem" customModule="QuestionAnswererAppKit" customModuleProvider="target">
             <connections>
+                <outlet property="field" destination="60r-dF-4Xg" id="MpF-tn-bjd"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -17,16 +18,19 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiw-FV-vzt">
-                    <rect key="frame" x="222" y="128" width="33" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" lineBreakMode="clipping" title="aaaa" id="IDD-Xo-Qt7">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="60r-dF-4Xg">
+                    <rect key="frame" x="222" y="128" width="37" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="SMK-Bv-QUP">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
             </subviews>
+            <constraints>
+                <constraint firstItem="60r-dF-4Xg" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="EeP-dt-YfK"/>
+                <constraint firstItem="60r-dF-4Xg" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="fZE-Gu-P3t"/>
+            </constraints>
             <point key="canvasLocation" x="11" y="154"/>
         </customView>
     </objects>
