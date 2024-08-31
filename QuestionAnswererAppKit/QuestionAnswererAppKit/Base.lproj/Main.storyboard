@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="2bm-BP-Wmr">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="2bm-BP-Wmr">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="NSView safe area layout guides" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -692,16 +692,16 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t49-hW-61q">
-                                <rect key="frame" x="0.0" y="33" width="450" height="257"/>
+                                <rect key="frame" x="0.0" y="35" width="450" height="255"/>
                                 <subviews>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kSF-Kb-si2">
-                                        <rect key="frame" x="0.0" y="100.5" width="450" height="163"/>
+                                        <rect key="frame" x="0.0" y="99" width="450" height="162"/>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="bvx-1J-Piw">
                                             <imageReference key="image" image="checkmark.seal" catalog="system" symbolScale="large"/>
                                         </imageCell>
                                     </imageView>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="w6m-tB-Kxs">
-                                        <rect key="frame" x="202" y="76" width="46" height="23"/>
+                                        <rect key="frame" x="202" y="76" width="46" height="21"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="E8N-ot-jw5">
                                             <font key="font" textStyle="title2" name=".SFNS-Regular"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -891,13 +891,13 @@ DQ
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GB-nq-qSb">
-                                <rect key="frame" x="0.0" y="0.0" width="264" height="1360"/>
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="1608"/>
                                 <clipView key="contentView" id="RQm-mq-hUS">
-                                    <rect key="frame" x="1" y="1" width="262" height="1358"/>
+                                    <rect key="frame" x="1" y="1" width="262" height="1606"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="kVp-IX-2q8">
-                                            <rect key="frame" x="0.0" y="0.0" width="262" height="1358"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="262" height="1606"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -940,7 +940,7 @@ DQ
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="zi8-ev-3ns">
-                                    <rect key="frame" x="1" y="1219" width="262" height="16"/>
+                                    <rect key="frame" x="1" y="1468" width="262" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="iy0-CN-R7J">
@@ -971,11 +971,11 @@ DQ
             <objects>
                 <viewController id="RCp-fU-wcq" customClass="QuestionAnswersViewController" customModule="QuestionAnswererAppKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="486-SL-6kD">
-                        <rect key="frame" x="0.0" y="0.0" width="915" height="642"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="331"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView hidden="YES" distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byg-gS-VMP">
-                                <rect key="frame" x="30" y="468" width="855" height="112"/>
+                                <rect key="frame" x="30" y="157" width="390" height="112"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="mdQ-uI-Axc">
                                         <rect key="frame" x="-2" y="96" width="16" height="16"/>
@@ -1042,10 +1042,10 @@ DQ
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnj-fV-WOc">
-                                <rect key="frame" x="365" y="298" width="185" height="47"/>
+                                <rect key="frame" x="133" y="143" width="185" height="45"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jcD-kF-mGo">
-                                        <rect key="frame" x="53" y="24" width="80" height="23"/>
+                                        <rect key="frame" x="52" y="24" width="80" height="21"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Welcome!" id="mor-jR-cT8">
                                             <font key="font" textStyle="title2" name=".SFNS-Regular"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -1093,11 +1093,11 @@ DQ
                 </viewController>
                 <customObject id="700-Qs-72N" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1275" y="1673"/>
+            <point key="canvasLocation" x="1042" y="1517.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkmark.circle" catalog="system" width="15" height="15"/>
-        <image name="checkmark.seal" catalog="system" width="21" height="22"/>
+        <image name="checkmark.seal" catalog="system" width="21" height="21"/>
     </resources>
 </document>
