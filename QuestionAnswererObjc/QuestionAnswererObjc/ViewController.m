@@ -36,14 +36,10 @@
     [rootView setup];
 }
 
-- (void)viewDidAppear {
-    [super viewDidAppear];
+-(void) resetExam {
+    [answers removeAllObjects];
+    [rootView reset];
 }
-
-- (void)viewWillAppear {
-    [super viewWillAppear];
-}
-
 
 - (void)questionAnswered:(NSInteger)answer witID:(NSString *) questionID index:(NSInteger)index {
     answers[questionID] = [[NSNumber alloc] initWithLong: answer];
@@ -58,6 +54,9 @@
     ResultViewController *resultVC = [[ResultViewController alloc] init];
     [resultVC setResult:result];
     [self presentViewControllerAsSheet:resultVC];
+    if (!result.passed) {
+        [self resetExam];
+    }
 }
 
 -(void) loadQuestions {

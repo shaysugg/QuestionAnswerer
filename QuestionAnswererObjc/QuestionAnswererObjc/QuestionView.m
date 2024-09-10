@@ -15,7 +15,7 @@
 @implementation QuestionView {
     NSSplitView *sv;
     NSTableView *tableView;
-    QuestionDetailView *questionView;
+    QuestionDetailView *detailView;
     NSButton *submitButton;
     NSArray<Question *> *questions;
     NSMutableIndexSet *answeredQuestionsIndexes;
@@ -42,7 +42,7 @@
     [self addQuestionList];
     [self addQuestionView];
     [self addSubmitView];
-    questionView.delegate = self;
+    detailView.delegate = self;
 }
 
 -(void) addSplitView {
@@ -75,10 +75,10 @@
 }
 
 -(void) addQuestionView {
-    questionView = [[QuestionDetailView alloc]init];
+    detailView = [[QuestionDetailView alloc]init];
     
-    [sv addArrangedSubview:questionView];
-    [questionView setFrameSize:NSMakeSize(200, 100)]; //hacky!
+    [sv addArrangedSubview:detailView];
+    [detailView setFrameSize:NSMakeSize(200, 100)]; //hacky!
 }
 
 -(void) addSubmitView {
@@ -104,6 +104,12 @@
 
 - (void)questionLoadFailed:(NSError *)error {
     //TODO:
+}
+
+-(void) reset {
+    [answeredQuestionsIndexes removeAllIndexes];
+    [tableView reloadData];
+    [detailView setQuestion:questions[0] withIndex:0 answered:0];
 }
 
 -(void) questionAnswered:(NSInteger) answer witID: (NSString *) questionID index: (NSInteger) index {
@@ -146,7 +152,7 @@
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification {
     Question *question = questions[tableView.selectedRow];
-    [questionView setQuestion:question withIndex:tableView.selectedRow answered:answeredQuestions[question.id].integerValue];
+    [detailView setQuestion:question withIndex:tableView.selectedRow answered:answeredQuestions[question.id].integerValue];
 }
 
 @end

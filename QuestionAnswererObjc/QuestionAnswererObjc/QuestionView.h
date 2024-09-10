@@ -17,12 +17,12 @@
 @interface QuestionView : NSView <NSTableViewDelegate, NSTableViewDataSource, QuestionViewDetailDelegate>
 
 @property(weak, nonatomic) id <QuestionViewDetailDelegate, QuestionViewDelegate> delegate;
--(void) bindAnswers: (NSDictionary<NSString *, NSNumber *> *) answeres;
+-(void) bindAnswers: (NSDictionary<NSString *, NSNumber *> *) answers;
 
 -(void) setup;
 -(void) reloadQuestions: (NSArray *)questions;
 -(void) questionLoadFailed: (NSError*) error;
-
+-(void) reset;
 
 @end
 
